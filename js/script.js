@@ -14,15 +14,55 @@
 }
 
 /**
- * This function updates the pizza size slider value.
+ * This function calculates the pizzas total price
  */
- function updateSliderValue(valueFromSlider1) {
-  document.getElementById("slider-value-pizza").innerHTML = valueFromSlider1
-}
 
-/**
- * This function updates the toppings slider value.
- */
- function updateSliderValue(valueFromSlider2) {
-  document.getElementById("slider-value-toppings").innerHTML = valueFromSlider2
+ function buttonClicked() {
+  var pizzaPrice = 0
+  var toppingPrice = 0
+  var totalPrice = 0
+  var tax = 0
+
+
+  var largeSize = document.getElementById("largeSize")
+  var extraLagreSize = document.getElementById("extraLagreSize")
+
+  if (largeSize.checked == true) {
+    pizzaPrice = 6.00
+    
+  }
+
+  if (extraLagreSize.checked == true) {
+    pizzaPrice = 10.00
+  }
+
+
+  var topping1 = document.getElementById("topping1")
+  var topping2 = document.getElementById("topping2")
+  var topping3 = document.getElementById("topping3")
+  var topping4 = document.getElementById("topping4")
+
+
+  if (topping1.checked == true) {
+    toppingPrice = 1.00
+  }
+
+  if (topping1.checked == true) {
+    toppingPrice = 1.75
+  }
+
+  if (topping1.checked == true) {
+    toppingPrice = 2.50
+  }
+
+  if (topping1.checked == true) {
+    toppingPrice = 3.35
+  }
+
+  
+  tax = (pizzaPrice + toppingPrice) * 0.13
+  totalPrice = tax + (pizzaPrice + totoppingPricep)
+
+  document.getElementById("order").innerHTML =
+  "Your pizza will cost  $" + totalPrice.toFixed(2);
 }
