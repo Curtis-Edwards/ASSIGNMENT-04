@@ -59,10 +59,12 @@
     toppingPrice = 3.35
   }
 
-  
+
   tax = (pizzaPrice + toppingPrice) * 0.13
-  totalPrice = tax + (pizzaPrice + totoppingPricep)
+  totalPrice = tax + (pizzaPrice + toppingPrice)
 
   document.getElementById("order").innerHTML =
-  "Your pizza will cost  $" + totalPrice.toFixed(2);
+  "Your pizza will cost  $" + totalPrice.toFixed(2)
+
+  console.log(totalPrice)
 }
