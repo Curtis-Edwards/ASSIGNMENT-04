@@ -16,13 +16,13 @@
 /**
  * This function updates the pizza size slider value.
  */
- function updateSliderValue(valueFromPizzaSlider) {
+ function updateSliderValue(valueFromSlider1) {
   document.getElementById("slider-value-pizza").innerHTML = valueFromPizzaSlider
 }
 
 /**
  * This function updates the toppings slider value.
  */
- function updateSliderValue(valueFromToppingsSlider) {
+ function updateSliderValue(valueFromSlider2) {
   document.getElementById("slider-value-toppings").innerHTML = valueFromToppingsSlider
 }
