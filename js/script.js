@@ -47,15 +47,15 @@
     toppingPrice = 1.00
   }
 
-  if (topping1.checked == true) {
+  if (topping2.checked == true) {
     toppingPrice = 1.75
   }
 
-  if (topping1.checked == true) {
+  if (topping3.checked == true) {
     toppingPrice = 2.50
   }
 
-  if (topping1.checked == true) {
+  if (topping4.checked == true) {
     toppingPrice = 3.35
   }
 
